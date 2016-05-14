@@ -27,3 +27,8 @@ serverless dash deploy
 ```
 
 {{url}/dev/noticia/{term}
+
+Test localy
+```
+./node_modules/.bin/babel-node local/index.js
+```

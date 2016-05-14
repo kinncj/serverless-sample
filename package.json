@@ -28,5 +28,9 @@
   "_npmOperationalInternal": {
     "host": "packages-13-west.internal.npmjs.com",
     "tmp": "tmp/serverless-starter-0.2.1.tgz_1458892667270_0.7738919164985418"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.8.0",
+    "node-babel": "^0.1.2"
   }
 }

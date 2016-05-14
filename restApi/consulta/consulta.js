@@ -30,13 +30,15 @@ export default class Consulta
         }
 
         let parsed = $.load(html),
-            links  = parsed('#content > div.wrapper > div > section:nth-child(1) > div > ul > li > .dataset-content')
-        .map(function(i, data) {
-            return {
+            links  = [];
+
+        parsed('#content > div.wrapper > div > section:nth-child(1) > div > ul > li > .dataset-content')
+        .each(function(i, data) {
+            links.push({
                 "text":   $(this).find('div').text(),
                 "header": $(this).find('a').text(),
                 "link":   $(this).find('a').attr('href')
-            };
+            });
         });
 
         this.cache.set(this.term, links);
